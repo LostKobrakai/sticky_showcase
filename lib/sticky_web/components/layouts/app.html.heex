@@ -28,5 +28,6 @@
   <div class="mx-auto max-w-2xl">
     <.flash_group flash={@flash} />
     <%= @inner_content %>
+    <%= live_render(@socket, StickyWeb.UploadSticky, id: "upload", sticky: true) %>
   </div>
 </main>
